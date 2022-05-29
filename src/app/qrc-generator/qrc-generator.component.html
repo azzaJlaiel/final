@@ -1,0 +1,31 @@
+<div class="image">
+
+
+<div>
+
+
+<div class="Center">
+<ngx-qrcode
+  [elementType]="elementType"
+  [errorCorrectionLevel]="correctionLevel"
+  [value]="value"
+  cssClass="aclass">
+</ngx-qrcode>
+</div>
+
+
+<textarea [(ngModel)] = "value"></textarea>
+</div>
+<div class="dropdown-divider"></div>
+
+
+
+</div>
+
+
+
+<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal" [style.color]="'#F8B400'">
+    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+    Logout
+</a>
+ 

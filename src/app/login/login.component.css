@@ -1,0 +1,77 @@
+/*.image{
+
+    height:50em; background-size: cover; width: auto;
+    background-image: url('fondd.jpg');
+    background-position: 50% 50% ;
+    /*background-image: url('log.jpg');
+}*/
+.image{
+    
+    height:50em;
+    background-size: cover; width: 90em;
+    background-image: url('Manu2.png');
+    background-size: 100% 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+.ppp{
+    background-image: url('fondd.jpg');
+}
+
+.ccc{
+    margin-top: 2cm;
+}
+
+
+/*.img{
+
+        height:35em; background-size: cover;width: auto;
+        background-position: 50% 50% ;
+        background-image: url('Sc.png');
+    
+}*/
+
+/*.ccc{
+    margin-top: 3cm;
+    margin-left: 4cm;
+    margin-right: 4cm;
+  
+}*/
+
+
+/*.marg{
+    background-image: url("im2.png");
+    height: 650px;
+    width:  400px;
+} 
+*/
+
+
+
+   
+
+
+   
+
+/*  float:right;
+
+     height: 180px;
+     width: 300px;
+     background-color: blue;
+
+      height: 40em; background-size: cover;width: auto;
+    background-image: url('login.jpg');
+    background-position: 30% 70% ;
+
+    position: relative;
+    background-color:red;
+    height:20px;
+    top: 50%;
+    transform: translateY(-50%)
+    
+    
+    height: 40em; background-size: cover;width: auto;
+    background-image: url('login.jpg');
+    margin-right: 1cm;*/
+
+

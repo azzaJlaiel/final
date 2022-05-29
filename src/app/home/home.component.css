@@ -1,0 +1,34 @@
+.example-card {
+    max-width: 400px;
+  }
+  
+  .image{
+    height: 60em; background-size: cover; width: auto;
+    background-image: url('fondd.jpg');
+    background-position: 50% 50% ;
+   margin-left: 2cm;
+    margin-right: 2cm;
+    margin-top: 2cm;
+}
+
+.dimen{
+
+  margin-top: 2cm;
+  margin-left: 3cm;
+  margin-right: 3cm;
+  
+}
+
+.mm{
+  margin-top: 2cm;
+  margin-left: 1cm;
+  height: 6cm;
+  width: 8cm;
+}
+.mn{
+  margin-top: 4cm;
+  margin-left: 1cm;
+  height: 6cm;
+  width: 8cm;
+}
+

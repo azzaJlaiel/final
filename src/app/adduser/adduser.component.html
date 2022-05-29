@@ -1,0 +1,47 @@
+
+<div  class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800" style="color: #22577E ;"></h1>
+</div>
+
+<div class="cr">
+<div class="card shadow mb-4">
+    
+    <div class="card-header py-3" [style.background-color]="'#B7CADB'">
+       <!-- <button class="btn btn-primary my-3" [routerLink]="['/users']"  style="background-color: #5584AC;">Back</button>-->
+        <h6 class="m-0 font-weight-bold text-primary">ADD USER</h6>
+    </div>
+    <div class="card-body">
+       <form [formGroup]="addUserForm" (ngSubmit)="onSubmit()" >
+           
+           <div class="form-group mb-3">
+            <label for="firstname">Firstname :</label>
+            <!--ng model : appel à l'attribut firstname déclaré dans le modèle-->
+            <input type="text" name="firstname" id="firstname" 
+            class="form-control" formControlName="fIrstname" [(ngModel)]="firstname"  >
+           </div>
+
+           <div class="form-group mb-3">
+            <label for="lastname">Lastname :</label>
+            <input type="text" name="lastname" id="lastname" class="form-control"
+             formControlName="lAstname"   [(ngModel)]="lastname" >
+        </div>
+        <div class="form-group mb-3">
+            <label for="lastname">Email :</label>
+            <input type="text" name="email" id="email" 
+            class="form-control" formControlName="eMail"   [(ngModel)]="email" >
+        </div>
+       <div class="form-group mb-3">
+        <label for="phone">Phone :</label> 
+        <input type="text" name="phone" id="phone" formControlName="pHone" 
+        class="form-control" [(ngModel)]="phone">
+        </div>
+
+           <div class="form-group">
+            <button type="submit" class="btn btn-primary" [disabled]="addUserForm.invalid"  style="background-color: #5584AC;">Add </button>
+            <button class="btn btn-primary my-3" [routerLink]="['/users']"  style="background-color: #5584AC;">Back</button>
+           </div>
+
+       </form>
+    </div>
+</div>
+</div>

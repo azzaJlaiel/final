@@ -1,0 +1,47 @@
+<div  class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800" style="color: #22577E ;"></h1> 
+</div>
+
+
+<div class="cr">
+<div class="card shadow mb-4">
+    <div class="card-header py-3"  [style.background-color]="'#B7CADB'">
+        
+        <h6 class="m-0 font-weight-bold text-primary">Update product</h6>
+    </div>
+    <div class="card-body">
+       <form [formGroup]="formGroup" (ngSubmit)="onSubmit5()" >
+           
+           <div class="form-group mb-3">
+            <label for="nom">Name</label>
+            <input type="text" class="form-control" formControlName="Nom" name="nom" value = "{{ data.nom }}" [(ngModel)]="data.nom">
+           </div>
+
+           <div class="form-group mb-3">
+            <label for="quantite">Quantity in stock</label>
+            <input type="text" class="form-control" formControlName="Quantite" name="quantite" value = "{{ data.quantite }}" [(ngModel)]="data.quantite">
+           </div>
+           <div class="form-group mb-3">
+            <label for="qvendue">Quantity sold</label>
+            <input type="text" class="form-control" formControlName="Qvendue" name="qvendue" value = "{{ data.qvendue }}" [(ngModel)]="data.qvendue">
+           </div>
+
+           <div class="form-group mb-3">
+            <label for="date">Expiry date</label>
+            <input type="date" class="form-control" formControlName="Date" name="date" value = "{{ data.date }}" [(ngModel)]="data.date">
+           </div>
+
+ 
+           <div class="form-group">
+                <button type="submit" class="btn btn-primary" style="background-color: #5584AC;" >Update</button>
+                <button class="btn btn-primary my-3" [routerLink]="['/produit']" style="background-color: #5584AC;" >Back</button>
+            </div>
+
+
+            
+       
+       </form>
+    </div>
+</div>
+</div>
+

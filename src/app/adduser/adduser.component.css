@@ -1,0 +1,25 @@
+/*.image{
+
+
+    height: 40em; background-size: cover;width: auto;
+    background-image: url('images.jpg');
+    background-position: 50% 50% ;
+}
+.dic{
+    margin-left: 3cm;
+}
+.cr{
+    margin-top: 3cm;
+    margin-right: 4cm;
+    margin-left: 4cm;
+}
+*/
+
+
+
+
+.cr{
+    margin-top: 3cm;
+    margin-right: 4cm;
+    margin-left: 4cm;
+}

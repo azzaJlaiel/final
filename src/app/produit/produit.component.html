@@ -1,0 +1,122 @@
+
+
+<!--
+  <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    <strong>Warning! </strong> le produit xxx expire dans 7jours
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+ -->
+
+
+
+<div  class="d-sm-flex align-items-center justify-content-between mb-4">
+    
+    <h1 class="h3 mb-0 text-gray-800" style="color: #22577E ;"></h1> 
+    <!--<a routerLink="/adduser" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" style="background-color: #5584AC;">
+        <i class="fas fa-download fa-sm text-white-50"> </i>  Add</a>-->
+</div>
+
+
+<div class="cr">
+<div class="card shadow mb-4 " >
+
+    <div class="card-header py-3"   [style.background-color]="'#B7CADB'">
+        <h6 class="m-0 font-weight-bold text-primary " >All  products</h6>
+            <button mat-raised-button color="primary"  [routerLink]="['/addproduit']" style="background-color: #5584AC;">Add</button>
+            <button mat-raised-button color="primary"  [routerLink]="['/home']" style="background-color: #5584AC;">Back</button>
+            <button mat-raised-button color="primary"  (click)="comaperQantite()" style="background-color: #5584AC;">comparer</button>
+    </div>
+
+
+
+    <div class="card-body">
+        <table class="table">
+        
+            <thead>
+                <tr>
+                   
+                    <th>Nom </th>
+                    <th>Quantité en stock</th>
+                    <th>Quantité vendue </th>
+                    <th>Date </th>
+                    <th>Validité de la date</th>
+                    <th>disponibilté</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            
+                <!--ngfor : appel d'un élement (se trouve) dans ts, dans html  -->
+                <tr *ngFor="let item2 of  listproduit ">
+                    
+                    <td>{{ item2.nom }}</td>
+                    <td>{{ item2.quantite }}</td>
+                    <td>{{item2.qvendue}}</td>
+                    <td>{{ item2.date }} </td>
+                   <td *ngFor= "let item2 of  listproduit "></td>
+                   <td *ngIf ="d===f"></td>
+                    <td>{{item2.nom}}</td>
+                   
+                   
+                   
+            
+
+
+                    <!--<td>
+                        <div *ngIf="item2.date===d"; else dateincorrecte ></div>
+                        <i class="pi pi-check color:red;" ></i>
+                        <ng-template #dateincorrecte></ng-template>
+                        <i class="pi pi-times"></i>
+
+                       
+                    </td>
+                    !-->
+                    <!--<td>  <span class="material-icons" style="color:#5584AC;" (ngSubmit)="convertDate()">edit</span></td>
+                   
+                   
+                   <td>
+                       <div *ngIf="quantite===qvenvue;" else qinvalide></div>
+                       <h5 valide></h5>
+                       <ng-template #qinvalide>
+                       <h5 invalide></h5>
+                    </ng-template>
+                    </td>
+                   
+                   !-->
+                   
+                    <td>
+                        <div class="example-button-container">
+                           <!-- <button mat-fab color="#FAFFAF" (click)= "openDialog(item1.$key)" aria-label="Example icon button with a delete icon">
+                                <mat-icon>delete</mat-icon>
+                              </button>-->
+                              <span class="material-icons" style="color:#5584AC;"(click)= "openDialog(item2.$key)">delete</span>
+                              <span class="material-icons" style="color:#5584AC;" (click)="edit(item2.$key)">edit</span>
+                          </div>
+                           </td>
+                </tr>
+            </tbody>
+            </table>
+            
+    </div>   
+</div>
+</div>
+
+
+
+<!--
+<div class="example-button-row">
+    <button mat-raised-button color="primary"  [routerLink]="['/home']" style="background-color: #5584AC;">Back</button>
+</div>
+
+<a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal" [style.color]="'#F8B400'">
+    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+    Logout
+</a>
+
+-->
+
+
+

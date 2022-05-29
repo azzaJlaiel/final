@@ -1,0 +1,49 @@
+<div  class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800" style="color: #22577E ;"></h1> 
+</div>
+
+
+<div class="cr">
+<div class="card shadow mb-4">
+    <div class="card-header py-3"  [style.background-color]="'#B7CADB'">
+        
+        <h6 class="m-0 font-weight-bold text-primary">Update user</h6>
+    </div>
+    <div class="card-body">
+       <form [formGroup]="formGroup" (ngSubmit)="onSubmit1()" >
+           
+           <div class="form-group mb-3">
+            <label for="firstname">Firstname :</label>
+            <input type="text" class="form-control" formControlName="fIrstname" name="firstname" value = "{{ data.firstname }}" [(ngModel)]="data.firstname">
+           </div>
+
+           <div class="form-group mb-3">
+            <label for="lastname">Lastname :</label>
+            <input type="text" class="form-control" formControlName="lAstname" name="lastname" value = "{{ data.lastname }}" [(ngModel)]="data.lastname">
+           </div>
+
+           <div class="form-group mb-3">
+            <label for="lastname">Email :</label>
+            <input type="text" class="form-control" formControlName="eMail" name="email" value = "{{ data.email }}" [(ngModel)]="data.email">
+           </div>
+           
+       <div class="form-group mb-3">
+        <label for="phone">Phone :</label> 
+        <input type="text" class="form-control" formControlName="pHone" name="phone" value = "{{ data.phone }}" [(ngModel)]="data.phone">
+
+        </div>
+
+ 
+           <div class="form-group">
+                <button type="submit" class="btn btn-primary" style="background-color: #5584AC;" >Update</button>
+                <button class="btn btn-primary my-3" [routerLink]="['/users']" style="background-color: #5584AC;" >Back</button>
+            </div>
+
+
+            
+       
+       </form>
+    </div>
+</div>
+</div>
+
